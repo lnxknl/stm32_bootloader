@@ -43,7 +43,6 @@ int main() {
 	} else {
 		// Turn GPIOB clock off
 		bit_clear(RCC->APB2ENR, RCC_APB2ENR_IOPBEN);
-
 		SCB->VTOR = USER_PROGRAM;
 
 		__asm__ volatile(
